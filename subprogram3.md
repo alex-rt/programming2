@@ -4,12 +4,19 @@
 > strategy, and subprograms are just outcome of that.
 
 • Subprograms are fundamental **building blocks of programs** and important concept in programming.
+
 •Subprograms have **input and output**. Inputs is usually through parameters to the subprogram while output could be through parameters or as a return.
+
 • Conventionally, there are two categories of subprograms- **procedures and functions.**
+
 • Subprograms having return are called functions; and others are called **procedures.** C/C++/Java have only **functions**.
+
 •**Subprogram Definition**: Describes interface and the actions of the subprogram.
+
 • **Subprogram call** is the explicit request that the called subprogram is executed.
+
 • **Subprogram header**: Which is first part of definition, defines its name, Input (parameters), and outputs and their types.
+
 • **Subprogram Interface**: Also called signature of subprogram, includes name of subprogram, list of parameters with their type, and output(s) and their types. For example prototypes in C/C++.
 
 This is a code example of a subprogram:
