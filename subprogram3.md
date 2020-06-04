@@ -35,8 +35,8 @@ This is a code example of a subprogram:
 	    return a;
     }
 
-
-    
+On a subprogram that uses parameters **by value**, the function receives a single copy of a variables value, *it cannot modify it.*
+On the other hand, with a subprogram that exchanges parameters **by refrence** , memory address of variables is stored and then passed through the function, so it can not only know the value but also *it can be modified.*  Its kind of like a pointer but for functions.
 
 
 
@@ -53,7 +53,11 @@ n! = n * (n - 1)!
 
 A recursive subprogram is **one that calls itself**. Think of a recursive call as a call to some other subprogram that does the same task as your subprogram. Each **recursive call** creates a new instance of any objects declared in the subprogram, including parameters, variables, cursors, and exceptions. 
 
+ - **Direct recursion:**  It happens when a function calls itself. 
+ - **Indirect recursion:** Occurs when a function is called not by itself but by another function that it called (either directly or indirectly). 
 
+
+For example, if _f_ calls _f,_ that is direct recursion, but if _f_ calls _g_ which calls _f,_ then that is indirect recursion of _f._
 #### Example
 
 To solve some programming problems, you must repeat a sequence of statements until a condition is met. You can use iteration or recursion to solve such problems. Recursion is appropriate when the problem can be broken down into simpler versions of itself. For example, you can evaluate 3! as follows:
