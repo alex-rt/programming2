@@ -15,7 +15,7 @@ int main()
 		char email[40];
 	};
 
-	struct mailing list[]={//doing the list of subscribers, 3 in this case
+	struct mailing list[]={//doing the list entries of subscribers, 3 in this case
 		{
 			"Alejandro",
 			"Rodriguez",
