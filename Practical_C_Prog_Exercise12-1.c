@@ -11,7 +11,7 @@ int main()
 	struct mailing {//mailing struct to hold all the data
 		char firstname[20];
 		char lastname[30];
-		char gender[6];
+		char gender[7];
 		char email[40];
 	};
 
