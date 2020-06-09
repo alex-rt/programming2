@@ -66,8 +66,6 @@ struct flight flights[] = { //adding the data to our struct, 2 flights in this c
 
 int flights_count = sizeof(flights)/sizeof(flights[0]);//finding out how many flights are there
 
-//void list_flights(void);
-
 void list_flights(void)//function to print all info
 {
 	int i;//flights loop counter 
