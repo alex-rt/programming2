@@ -26,7 +26,7 @@ int main()
     chars = words = lines = 0;
 	
 	//while loop to look through all the file
-    while ((ch = fgetc(file)) != EOF)//while there is sill file left (EOF=End of File)
+    while ((ch = fgetc(sourcefile)) != EOF)//while there is sill file left (EOF=End of File)
     {
         chars++;//add one character to the count
         //if theres a new line
@@ -50,7 +50,7 @@ int main()
     printf("Total lines      = %d\n", lines);
 
     //file closing
-    fclose(file);
+    fclose(sourcefile);
     return 0;
 }
 //source: https://codeforwin.org/2018/02/c-program-count-characters-words-lines-in-file.html
