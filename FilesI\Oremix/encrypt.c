@@ -9,37 +9,37 @@ int main()
 	char chr;
 	FILE *source;
 	FILE *dest;
-
-	source=fopen(sourcefile, "r");
-	dest=fopen(destinationfile, "w");
 	
+	source=fopen(sourcefile, "r");//r=reading
+	dest=fopen(destinationfile, "w");//w=writing 
+	//fopen() return NULL if unable to open file in given mode. 
 	if(source==NULL || dest==NULL){
 	printf("\nFile opening failure.\n");
         printf("Check teh existence of files and read/write privilege.\n");
-        exit(EXIT_FAILURE);
+        exit(EXIT_FAILURE);//Unable to open file hence exit
 	}
 	
-	while((chr = fgetc(source)) != EOF){
+	while((chr = fgetc(source)) != EOF){//EOF=End Of File
 	chr=chr+100;
 	fputc(chr, dest);
 	}
-
+	//file closing
 	fclose(source);
 	fclose(dest);
-
-	source=fopen(sourcefile, "w");
-	dest=fopen(destinationfile, "r");
-	
+	//file opening with different permissions
+	source=fopen(sourcefile, "w");//w=writing 
+	dest=fopen(destinationfile, "r");//r=reading
+	//fopen() return NULL if unable to open file in given mode. 
 	if(source==NULL || dest==NULL){
 	printf("\nFile opening failure.\n");
         printf("Check teh existence of files and read/write privilege.\n");
-        exit(EXIT_FAILURE);
+        exit(EXIT_FAILURE);//Unable to open file hence exit
 	}
 
-	while((chr = fgetc(dest)) != EOF){
+	while((chr = fgetc(dest)) != EOF){//EOF=End Of File
 	fputc(chr, source);
 	}
-  
+  	//Output
 	printf(" File %s successfully encrypted\n\n", sourcefile);
 	fclose(source);
 	fclose(dest);
