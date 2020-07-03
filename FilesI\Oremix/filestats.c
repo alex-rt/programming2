@@ -53,3 +53,4 @@ int main()
     fclose(file);
     return 0;
 }
+//source: https://codeforwin.org/2018/02/c-program-count-characters-words-lines-in-file.html
