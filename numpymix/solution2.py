@@ -13,12 +13,15 @@ print(x)
 #finding the transpose od the x matrix
 x_transpose = np.transpose(x)
 #printing transpose matrix
+print("Transpose matrix:")
 print(x_transpose)
 #Doing a dot product of inicial matrix and its transpose
 result1 = np.dot(x, x_transpose)
 #Printing result
+print("Dot product x*xtranspose:")
 print(result1)
 #Multiplying result by a scalar(3 in this case)
 result2 = result1*3
 #Printing last result
+print("Previous result * 3 :")
 print(result2)
